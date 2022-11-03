@@ -1,0 +1,22 @@
+appName: app-pod
+
+deployment:
+    depName: deployment-test1
+    replicaCount: 1
+    image: testaccountcsa/first_repo:test
+    containerPort: 8080   
+        
+service: 
+    name: service-test3
+    protocol: TCP
+    port: 4040
+    
+    
+ingress: 
+    host: base.ca
+    name: ingress-test1
+    redirect: "false"
+    path: /
+    pathType: Prefix
+    
+    
